@@ -1,14 +1,11 @@
 #!/usr/bin/env node
 
 /**
- * Fetches airport risk/closure data from SafeAirspace.net (conflict zone data)
- * AND FlightAware AeroAPI (operational delays), then writes data/status.json.
- *
- * SafeAirspace provides country-level risk ratings for conflict zones.
- * AeroAPI provides per-airport operational delay data.
+ * Fetches country-level airspace risk data from SafeAirspace.net
+ * and writes data/status.json for the static frontend.
  *
  * Usage:
- *   FLIGHTAWARE_API_KEY=your_key node scripts/fetch-data.mjs
+ *   node scripts/fetch-data.mjs
  */
 
 import * as cheerio from 'cheerio';
@@ -18,13 +15,6 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
-const AEROAPI_BASE = 'https://aeroapi.flightaware.com/aeroapi';
-
-const API_KEY = process.env.FLIGHTAWARE_API_KEY;
-if (!API_KEY) {
-  console.error('❌ FLIGHTAWARE_API_KEY environment variable is required');
-  process.exit(1);
-}
 
 // ---------------------------------------------------------------------------
 // Country → SafeAirspace slug mapping
@@ -44,6 +34,13 @@ const COUNTRY_SLUGS = {
   'Oman': 'oman',
   'Yemen': 'yemen',
   'Egypt': 'egypt',
+  'Cyprus': 'cyprus',
+  'Turkey': 'turkey',
+  'Pakistan': 'pakistan',
+  'Afghanistan': 'afghanistan',
+  'Libya': 'libya',
+  'Sudan': 'sudan',
+  'Somalia': 'somalia',
 };
 
 // ---------------------------------------------------------------------------
@@ -53,34 +50,32 @@ const airports = JSON.parse(
   readFileSync(join(ROOT, 'config', 'airports.json'), 'utf-8')
 );
 
-console.log(`📡 Fetching status for ${airports.length} airports across ${Object.keys(COUNTRY_SLUGS).length} countries…\n`);
+const uniqueCountries = [...new Set(airports.map((a) => a.country))];
+console.log(`📡 Fetching risk data for ${uniqueCountries.length} countries (${airports.length} airports)…\n`);
 
 // ---------------------------------------------------------------------------
-// 1. Fetch SafeAirspace risk levels per country
+// Fetch SafeAirspace risk level for a country
 // ---------------------------------------------------------------------------
-async function fetchSafeAirspaceRisk(country, slug) {
+async function fetchCountryRisk(country, slug) {
   const url = `https://safeairspace.net/${slug}/`;
   try {
     const res = await fetch(url, {
-      headers: {
-        'User-Agent': 'AirportStatusBot/1.0 (GitHub Pages dashboard)',
-      },
+      headers: { 'User-Agent': 'AirportStatusBot/1.0 (GitHub Pages dashboard)' },
     });
 
     if (!res.ok) {
-      console.warn(`  ⚠️  SafeAirspace ${country}: HTTP ${res.status}`);
-      return { riskLevel: null, riskText: null, warnings: [], error: `HTTP ${res.status}` };
+      console.warn(`  ⚠️  ${country}: HTTP ${res.status}`);
+      return { riskLevel: null, riskText: null, warnings: [] };
     }
 
     const html = await res.text();
     const $ = cheerio.load(html);
 
-    // Find the risk level heading: "### Risk Level: One - Do Not Fly"
     let riskText = null;
     let riskLevel = null;
-    let warnings = [];
+    const warnings = [];
 
-    // Search for risk level text in h3 elements
+    // Find risk level in h3 headings: "Risk Level: One - Do Not Fly"
     $('h3').each((_, el) => {
       const text = $(el).text().trim();
       if (text.startsWith('Risk Level:')) {
@@ -88,30 +83,23 @@ async function fetchSafeAirspaceRisk(country, slug) {
       }
     });
 
-    // Also try broader text search in case of different markup
+    // Fallback: search body text
     if (!riskText) {
       const bodyText = $('body').text();
-      const riskMatch = bodyText.match(/Risk Level:\s*(.+?)(?:\n|$)/);
-      if (riskMatch) {
-        riskText = riskMatch[1].trim();
-      }
+      const match = bodyText.match(/Risk Level:\s*(.+?)(?:\n|$)/);
+      if (match) riskText = match[1].trim();
     }
 
-    // Parse risk level number
+    // Parse risk level
     if (riskText) {
-      const lowerText = riskText.toLowerCase();
-      if (lowerText.includes('one') || lowerText.includes('do not fly')) {
-        riskLevel = 1; // DO NOT FLY
-      } else if (lowerText.includes('two') || lowerText.includes('danger')) {
-        riskLevel = 2; // DANGER EXISTS
-      } else if (lowerText.includes('three') || lowerText.includes('caution')) {
-        riskLevel = 3; // EXERCISE CAUTION
-      } else if (lowerText.includes('no warning') || lowerText.includes('no risk')) {
-        riskLevel = 0; // NO WARNINGS
-      }
+      const lower = riskText.toLowerCase();
+      if (lower.includes('one') || lower.includes('do not fly')) riskLevel = 1;
+      else if (lower.includes('two') || lower.includes('danger')) riskLevel = 2;
+      else if (lower.includes('three') || lower.includes('caution')) riskLevel = 3;
+      else if (lower.includes('no warning') || lower.includes('no risk')) riskLevel = 0;
     }
 
-    // Collect warning NOTAMs
+    // Collect NOTAMs/warnings
     $('a').each((_, el) => {
       const text = $(el).text().trim();
       if (text.match(/Notam|CZIB|SFAR|AIC|AIP/i) && text.length < 100) {
@@ -121,71 +109,19 @@ async function fetchSafeAirspaceRisk(country, slug) {
 
     return { riskLevel, riskText, warnings };
   } catch (err) {
-    console.warn(`  ⚠️  SafeAirspace ${country}: ${err.message}`);
-    return { riskLevel: null, riskText: null, warnings: [], error: err.message };
+    console.warn(`  ⚠️  ${country}: ${err.message}`);
+    return { riskLevel: null, riskText: null, warnings: [] };
   }
 }
 
 // ---------------------------------------------------------------------------
-// 2. Fetch AeroAPI delays (supplementary operational data)
+// Map risk level to status
 // ---------------------------------------------------------------------------
-async function fetchAeroAPIDelays(icao) {
-  const url = `${AEROAPI_BASE}/airports/${icao}/delays`;
-  try {
-    const res = await fetch(url, {
-      headers: { 'x-apikey': API_KEY },
-    });
-
-    if (res.status === 404) {
-      return { delays: [] };
-    }
-
-    if (!res.ok) {
-      return { delays: [], error: `HTTP ${res.status}` };
-    }
-
-    const data = await res.json();
-    const entries = data.delays || data.airport_delays || [];
-    const delays = [];
-
-    if (Array.isArray(entries)) {
-      for (const entry of entries) {
-        delays.push({
-          type: entry.type || entry.delay_type || 'delay',
-          reason: entry.reason || entry.category || '',
-          avgMinutes: entry.average || entry.average_delay || null,
-        });
-      }
-    }
-
-    return { delays };
-  } catch (err) {
-    return { delays: [], error: err.message };
-  }
-}
-
-// ---------------------------------------------------------------------------
-// 3. Determine airport status from combined data
-// ---------------------------------------------------------------------------
-function determineStatus(riskInfo, aeroDelays) {
-  // SafeAirspace risk level takes priority for conflict-zone status
-  if (riskInfo.riskLevel === 1) return 'closed';      // Do Not Fly
-  if (riskInfo.riskLevel === 2) return 'at-risk';      // Danger Exists
-  if (riskInfo.riskLevel === 3) return 'caution';      // Exercise Caution
-
-  // Check AeroAPI for operational delays
-  if (aeroDelays.delays && aeroDelays.delays.length > 0) {
-    const hasClosure = aeroDelays.delays.some((d) => {
-      const t = (d.type || '').toLowerCase();
-      const r = (d.reason || '').toLowerCase();
-      return t.includes('closure') || t.includes('closed') || t.includes('ground_stop') ||
-             r.includes('closed') || r.includes('closure');
-    });
-    if (hasClosure) return 'closed';
-    return 'delayed';
-  }
-
-  return 'operational'; // No risk, no delays
+function riskToStatus(riskLevel) {
+  if (riskLevel === 1) return 'closed';
+  if (riskLevel === 2) return 'at-risk';
+  if (riskLevel === 3) return 'caution';
+  return 'operational';
 }
 
 function statusLabel(status) {
@@ -193,57 +129,41 @@ function statusLabel(status) {
     closed: 'Do Not Fly',
     'at-risk': 'Danger Exists',
     caution: 'Exercise Caution',
-    delayed: 'Delayed',
     operational: 'Operational',
-    unknown: 'Unknown',
   }[status] || 'Unknown';
+}
+
+function statusEmoji(riskLevel) {
+  return { 1: '🔴', 2: '🟠', 3: '🟡', 0: '🟢' }[riskLevel] || '🟢';
 }
 
 // ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
 async function main() {
-  // Step 1: Fetch SafeAirspace risk levels per unique country
-  const uniqueCountries = [...new Set(airports.map((a) => a.country))];
   const countryRisks = {};
 
-  console.log('🌍 Fetching SafeAirspace risk levels…');
+  // Fetch risk levels per country
   for (const country of uniqueCountries) {
     const slug = COUNTRY_SLUGS[country];
     if (!slug) {
-      console.log(`  ⏭️  ${country}: no SafeAirspace slug configured`);
-      countryRisks[country] = { riskLevel: null, riskText: null, warnings: [] };
+      console.log(`  ⏭️  ${country}: no SafeAirspace slug`);
+      countryRisks[country] = { riskLevel: 0, riskText: 'No Warnings', warnings: [] };
       continue;
     }
 
     process.stdout.write(`  ${country}… `);
-    const risk = await fetchSafeAirspaceRisk(country, slug);
-    const emoji = risk.riskLevel === 1 ? '🔴' : risk.riskLevel === 2 ? '🟠' : risk.riskLevel === 3 ? '🟡' : '🟢';
-    console.log(`${emoji} ${risk.riskText || 'No data'}`);
+    const risk = await fetchCountryRisk(country, slug);
+    console.log(`${statusEmoji(risk.riskLevel)} ${risk.riskText || 'No data'}`);
     countryRisks[country] = risk;
 
-    await sleep(500); // Be polite
+    await sleep(500);
   }
 
-  // Step 2: Fetch AeroAPI delays per airport
-  console.log('\n✈️  Fetching AeroAPI delays…');
-  const aeroDelays = {};
-  for (const airport of airports) {
-    process.stdout.write(`  ${airport.icao} ${airport.name}… `);
-    const delayInfo = await fetchAeroAPIDelays(airport.icao);
-    const hasDelays = delayInfo.delays.length > 0;
-    console.log(hasDelays ? `🟠 ${delayInfo.delays.length} delay(s)` : '🟢 none');
-    aeroDelays[airport.icao] = delayInfo;
-
-    await sleep(300);
-  }
-
-  // Step 3: Combine data
-  console.log('\n📊 Combining data…');
+  // Build per-airport results
   const results = airports.map((airport) => {
-    const riskInfo = countryRisks[airport.country] || { riskLevel: null, riskText: null, warnings: [] };
-    const aeroInfo = aeroDelays[airport.icao] || { delays: [] };
-    const status = determineStatus(riskInfo, aeroInfo);
+    const risk = countryRisks[airport.country] || { riskLevel: 0, riskText: null, warnings: [] };
+    const status = riskToStatus(risk.riskLevel);
 
     return {
       icao: airport.icao,
@@ -254,14 +174,12 @@ async function main() {
       lon: airport.lon,
       status,
       statusLabel: statusLabel(status),
-      riskLevel: riskInfo.riskLevel,
-      riskText: riskInfo.riskText || null,
-      warnings: (riskInfo.warnings || []).slice(0, 5), // Top 5 warnings
-      delays: aeroInfo.delays || [],
+      riskLevel: risk.riskLevel,
+      riskText: risk.riskText || null,
+      warnings: (risk.warnings || []).slice(0, 5),
     };
   });
 
-  // Build output
   const output = {
     lastUpdated: new Date().toISOString(),
     airports: results,
@@ -270,19 +188,17 @@ async function main() {
       closed: results.filter((a) => a.status === 'closed').length,
       atRisk: results.filter((a) => a.status === 'at-risk').length,
       caution: results.filter((a) => a.status === 'caution').length,
-      delayed: results.filter((a) => a.status === 'delayed').length,
       operational: results.filter((a) => a.status === 'operational').length,
     },
   };
 
-  // Write output
   const outDir = join(ROOT, 'data');
   mkdirSync(outDir, { recursive: true });
   const outPath = join(outDir, 'status.json');
   writeFileSync(outPath, JSON.stringify(output, null, 2), 'utf-8');
 
   console.log(`\n✅ Wrote ${outPath}`);
-  console.log(`   📊 ${output.summary.closed} closed, ${output.summary.atRisk} at-risk, ${output.summary.caution} caution, ${output.summary.delayed} delayed, ${output.summary.operational} operational`);
+  console.log(`   📊 ${output.summary.closed} closed, ${output.summary.atRisk} at-risk, ${output.summary.caution} caution, ${output.summary.operational} operational`);
 }
 
 function sleep(ms) {

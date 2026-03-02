@@ -1,218 +1,42 @@
 [
-  {
-    "icao": "LLBG",
-    "name": "Ben Gurion International",
-    "city": "Tel Aviv",
-    "country": "Israel",
-    "lat": 32.0114,
-    "lon": 34.8867
-  },
-  {
-    "icao": "LLER",
-    "name": "Ramon International",
-    "city": "Eilat",
-    "country": "Israel",
-    "lat": 29.7237,
-    "lon": 35.0124
-  },
-  {
-    "icao": "OLBA",
-    "name": "Rafic Hariri International",
-    "city": "Beirut",
-    "country": "Lebanon",
-    "lat": 33.8209,
-    "lon": 35.4884
-  },
-  {
-    "icao": "OSDI",
-    "name": "Damascus International",
-    "city": "Damascus",
-    "country": "Syria",
-    "lat": 33.4115,
-    "lon": 36.5156
-  },
-  {
-    "icao": "OSAP",
-    "name": "Aleppo International",
-    "city": "Aleppo",
-    "country": "Syria",
-    "lat": 36.1807,
-    "lon": 37.2244
-  },
-  {
-    "icao": "OJAM",
-    "name": "Queen Alia International",
-    "city": "Amman",
-    "country": "Jordan",
-    "lat": 31.7226,
-    "lon": 35.9932
-  },
-  {
-    "icao": "ORBI",
-    "name": "Baghdad International",
-    "city": "Baghdad",
-    "country": "Iraq",
-    "lat": 33.2625,
-    "lon": 44.2346
-  },
-  {
-    "icao": "ORER",
-    "name": "Erbil International",
-    "city": "Erbil",
-    "country": "Iraq",
-    "lat": 36.2376,
-    "lon": 43.9632
-  },
-  {
-    "icao": "ORMM",
-    "name": "Basra International",
-    "city": "Basra",
-    "country": "Iraq",
-    "lat": 30.5491,
-    "lon": 47.6621
-  },
-  {
-    "icao": "OIIE",
-    "name": "Imam Khomeini International",
-    "city": "Tehran",
-    "country": "Iran",
-    "lat": 35.4161,
-    "lon": 51.1522
-  },
-  {
-    "icao": "OISS",
-    "name": "Shiraz International",
-    "city": "Shiraz",
-    "country": "Iran",
-    "lat": 29.5392,
-    "lon": 52.5899
-  },
-  {
-    "icao": "OIBB",
-    "name": "Bandar Abbas International",
-    "city": "Bandar Abbas",
-    "country": "Iran",
-    "lat": 27.2183,
-    "lon": 56.3778
-  },
-  {
-    "icao": "OMDB",
-    "name": "Dubai International",
-    "city": "Dubai",
-    "country": "UAE",
-    "lat": 25.2528,
-    "lon": 55.3644
-  },
-  {
-    "icao": "OMAA",
-    "name": "Abu Dhabi International",
-    "city": "Abu Dhabi",
-    "country": "UAE",
-    "lat": 24.444,
-    "lon": 54.6511
-  },
-  {
-    "icao": "OMSJ",
-    "name": "Sharjah International",
-    "city": "Sharjah",
-    "country": "UAE",
-    "lat": 25.3286,
-    "lon": 55.5172
-  },
-  {
-    "icao": "OTHH",
-    "name": "Hamad International",
-    "city": "Doha",
-    "country": "Qatar",
-    "lat": 25.2731,
-    "lon": 51.6081
-  },
-  {
-    "icao": "OBBI",
-    "name": "Bahrain International",
-    "city": "Manama",
-    "country": "Bahrain",
-    "lat": 26.2708,
-    "lon": 50.6336
-  },
-  {
-    "icao": "OKBK",
-    "name": "Kuwait International",
-    "city": "Kuwait City",
-    "country": "Kuwait",
-    "lat": 29.2267,
-    "lon": 47.9689
-  },
-  {
-    "icao": "OERK",
-    "name": "King Khalid International",
-    "city": "Riyadh",
-    "country": "Saudi Arabia",
-    "lat": 24.9576,
-    "lon": 46.6988
-  },
-  {
-    "icao": "OEJN",
-    "name": "King Abdulaziz International",
-    "city": "Jeddah",
-    "country": "Saudi Arabia",
-    "lat": 21.6796,
-    "lon": 39.1565
-  },
-  {
-    "icao": "OEDF",
-    "name": "King Fahd International",
-    "city": "Dammam",
-    "country": "Saudi Arabia",
-    "lat": 26.4712,
-    "lon": 49.7979
-  },
-  {
-    "icao": "OOMS",
-    "name": "Muscat International",
-    "city": "Muscat",
-    "country": "Oman",
-    "lat": 23.5933,
-    "lon": 58.2844
-  },
-  {
-    "icao": "OYSN",
-    "name": "Sana'a International",
-    "city": "Sana'a",
-    "country": "Yemen",
-    "lat": 15.4763,
-    "lon": 44.2197
-  },
-  {
-    "icao": "OYAA",
-    "name": "Aden International",
-    "city": "Aden",
-    "country": "Yemen",
-    "lat": 12.8295,
-    "lon": 45.0288
-  },
-  {
-    "icao": "HECA",
-    "name": "Cairo International",
-    "city": "Cairo",
-    "country": "Egypt",
-    "lat": 30.1219,
-    "lon": 31.4056
-  },
-  {
-    "icao": "HEGN",
-    "name": "Hurghada International",
-    "city": "Hurghada",
-    "country": "Egypt",
-    "lat": 27.1784,
-    "lon": 33.7994
-  },
-  {
-    "icao": "HESH",
-    "name": "Sharm El Sheikh International",
-    "city": "Sharm El Sheikh",
-    "country": "Egypt",
-    "lat": 27.9773,
-    "lon": 34.395
-  }
+  { "icao": "LLBG", "name": "Ben Gurion International", "city": "Tel Aviv", "country": "Israel", "lat": 32.0114, "lon": 34.8867 },
+  { "icao": "LLER", "name": "Ramon International", "city": "Eilat", "country": "Israel", "lat": 29.7237, "lon": 35.0124 },
+  { "icao": "OLBA", "name": "Rafic Hariri International", "city": "Beirut", "country": "Lebanon", "lat": 33.8209, "lon": 35.4884 },
+  { "icao": "OSDI", "name": "Damascus International", "city": "Damascus", "country": "Syria", "lat": 33.4115, "lon": 36.5156 },
+  { "icao": "OSAP", "name": "Aleppo International", "city": "Aleppo", "country": "Syria", "lat": 36.1807, "lon": 37.2244 },
+  { "icao": "OJAM", "name": "Queen Alia International", "city": "Amman", "country": "Jordan", "lat": 31.7226, "lon": 35.9932 },
+  { "icao": "ORBI", "name": "Baghdad International", "city": "Baghdad", "country": "Iraq", "lat": 33.2625, "lon": 44.2346 },
+  { "icao": "ORER", "name": "Erbil International", "city": "Erbil", "country": "Iraq", "lat": 36.2376, "lon": 43.9632 },
+  { "icao": "ORMM", "name": "Basra International", "city": "Basra", "country": "Iraq", "lat": 30.5491, "lon": 47.6621 },
+  { "icao": "OIIE", "name": "Imam Khomeini International", "city": "Tehran", "country": "Iran", "lat": 35.4161, "lon": 51.1522 },
+  { "icao": "OISS", "name": "Shiraz International", "city": "Shiraz", "country": "Iran", "lat": 29.5392, "lon": 52.5899 },
+  { "icao": "OIBB", "name": "Bandar Abbas International", "city": "Bandar Abbas", "country": "Iran", "lat": 27.2183, "lon": 56.3778 },
+  { "icao": "OMDB", "name": "Dubai International", "city": "Dubai", "country": "UAE", "lat": 25.2528, "lon": 55.3644 },
+  { "icao": "OMAA", "name": "Abu Dhabi International", "city": "Abu Dhabi", "country": "UAE", "lat": 24.4440, "lon": 54.6511 },
+  { "icao": "OMSJ", "name": "Sharjah International", "city": "Sharjah", "country": "UAE", "lat": 25.3286, "lon": 55.5172 },
+  { "icao": "OTHH", "name": "Hamad International", "city": "Doha", "country": "Qatar", "lat": 25.2731, "lon": 51.6081 },
+  { "icao": "OBBI", "name": "Bahrain International", "city": "Manama", "country": "Bahrain", "lat": 26.2708, "lon": 50.6336 },
+  { "icao": "OKBK", "name": "Kuwait International", "city": "Kuwait City", "country": "Kuwait", "lat": 29.2267, "lon": 47.9689 },
+  { "icao": "OERK", "name": "King Khalid International", "city": "Riyadh", "country": "Saudi Arabia", "lat": 24.9576, "lon": 46.6988 },
+  { "icao": "OEJN", "name": "King Abdulaziz International", "city": "Jeddah", "country": "Saudi Arabia", "lat": 21.6796, "lon": 39.1565 },
+  { "icao": "OEDF", "name": "King Fahd International", "city": "Dammam", "country": "Saudi Arabia", "lat": 26.4712, "lon": 49.7979 },
+  { "icao": "OOMS", "name": "Muscat International", "city": "Muscat", "country": "Oman", "lat": 23.5933, "lon": 58.2844 },
+  { "icao": "OYSN", "name": "Sana'a International", "city": "Sana'a", "country": "Yemen", "lat": 15.4763, "lon": 44.2197 },
+  { "icao": "OYAA", "name": "Aden International", "city": "Aden", "country": "Yemen", "lat": 12.8295, "lon": 45.0288 },
+  { "icao": "HECA", "name": "Cairo International", "city": "Cairo", "country": "Egypt", "lat": 30.1219, "lon": 31.4056 },
+  { "icao": "HEGN", "name": "Hurghada International", "city": "Hurghada", "country": "Egypt", "lat": 27.1784, "lon": 33.7994 },
+  { "icao": "HESH", "name": "Sharm El Sheikh International", "city": "Sharm El Sheikh", "country": "Egypt", "lat": 27.9773, "lon": 34.3950 },
+  { "icao": "LCLK", "name": "Larnaca International", "city": "Larnaca", "country": "Cyprus", "lat": 34.8751, "lon": 33.6249 },
+  { "icao": "LCPH", "name": "Paphos International", "city": "Paphos", "country": "Cyprus", "lat": 34.7180, "lon": 32.4857 },
+  { "icao": "LTFM", "name": "Istanbul Airport", "city": "Istanbul", "country": "Turkey", "lat": 41.2608, "lon": 28.7419 },
+  { "icao": "LTFJ", "name": "Sabiha Gökçen International", "city": "Istanbul", "country": "Turkey", "lat": 40.8986, "lon": 29.3092 },
+  { "icao": "LTAC", "name": "Esenboğa International", "city": "Ankara", "country": "Turkey", "lat": 40.1281, "lon": 32.9951 },
+  { "icao": "OPKC", "name": "Jinnah International", "city": "Karachi", "country": "Pakistan", "lat": 24.9065, "lon": 67.1609 },
+  { "icao": "OPLA", "name": "Allama Iqbal International", "city": "Lahore", "country": "Pakistan", "lat": 31.5216, "lon": 74.4036 },
+  { "icao": "OPRN", "name": "Islamabad International", "city": "Islamabad", "country": "Pakistan", "lat": 33.5605, "lon": 72.8495 },
+  { "icao": "OAKB", "name": "Hamid Karzai International", "city": "Kabul", "country": "Afghanistan", "lat": 34.5659, "lon": 69.2124 },
+  { "icao": "HLLT", "name": "Mitiga International", "city": "Tripoli", "country": "Libya", "lat": 32.8941, "lon": 13.2760 },
+  { "icao": "HLLB", "name": "Benina International", "city": "Benghazi", "country": "Libya", "lat": 32.0968, "lon": 20.2694 },
+  { "icao": "HSSS", "name": "Khartoum International", "city": "Khartoum", "country": "Sudan", "lat": 15.5895, "lon": 32.5532 },
+  { "icao": "HCMM", "name": "Aden Abdulle International", "city": "Mogadishu", "country": "Somalia", "lat": 2.0144, "lon": 45.3047 }
 ]

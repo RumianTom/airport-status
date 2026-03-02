@@ -15,6 +15,8 @@ const COUNTRY_FLAGS = {
   'Iraq': '🇮🇶', 'Iran': '🇮🇷', 'UAE': '🇦🇪', 'Qatar': '🇶🇦',
   'Bahrain': '🇧🇭', 'Kuwait': '🇰🇼', 'Saudi Arabia': '🇸🇦',
   'Oman': '🇴🇲', 'Yemen': '🇾🇪', 'Egypt': '🇪🇬',
+  'Cyprus': '🇨🇾', 'Turkey': '🇹🇷', 'Pakistan': '🇵🇰',
+  'Afghanistan': '🇦🇫', 'Libya': '🇱🇾', 'Sudan': '🇸🇩', 'Somalia': '🇸🇴',
 };
 
 const STATUS_EMOJI = {
