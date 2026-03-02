@@ -1,0 +1,11 @@
+{
+  "name": "airport-status",
+  "version": "1.0.0",
+  "description": "Lightweight Middle East airport status dashboard — closed & at-risk airports",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch": "node scripts/fetch-data.mjs",
+    "serve": "npx -y serve ."
+  }
+}

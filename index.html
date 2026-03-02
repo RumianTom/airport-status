@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Live status of Middle East airports — closures, delays, and operational status updated hourly."
+    />
+    <title>Middle East Airport Status — Live Closures & Delays</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="header-content">
+        <div class="header-title">
+          <h1>✈️ Middle East Airport Status</h1>
+          <p class="subtitle">Live closures & delays — updated hourly</p>
+        </div>
+        <div class="header-meta">
+          <div id="last-updated" class="last-updated">
+            <span class="update-dot"></span>
+            <span id="update-text">Loading…</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Summary Stats -->
+    <section id="summary" class="summary">
+      <div class="stat-card stat-closed" id="stat-closed">
+        <span class="stat-number">—</span>
+        <span class="stat-label">Closed</span>
+      </div>
+      <div class="stat-card stat-delayed" id="stat-delayed">
+        <span class="stat-number">—</span>
+        <span class="stat-label">Delayed</span>
+      </div>
+      <div class="stat-card stat-operational" id="stat-operational">
+        <span class="stat-number">—</span>
+        <span class="stat-label">Operational</span>
+      </div>
+      <div class="stat-card stat-total" id="stat-total">
+        <span class="stat-number">—</span>
+        <span class="stat-label">Tracked</span>
+      </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters">
+      <button class="filter-btn active" data-filter="all" id="filter-all">
+        All
+      </button>
+      <button class="filter-btn" data-filter="closed" id="filter-closed">
+        🔴 Closed
+      </button>
+      <button class="filter-btn" data-filter="delayed" id="filter-delayed">
+        🟠 Delayed
+      </button>
+      <button
+        class="filter-btn"
+        data-filter="operational"
+        id="filter-operational"
+      >
+        🟢 Operational
+      </button>
+    </section>
+
+    <!-- Airport Grid -->
+    <main id="airport-grid" class="airport-grid">
+      <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>Loading airport data…</p>
+      </div>
+    </main>
+
+    <!-- Error state -->
+    <div id="error-banner" class="error-banner hidden">
+      <p>⚠️ <span id="error-message">Failed to load data</span></p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        Data from
+        <a href="https://flightaware.com" target="_blank" rel="noopener"
+          >FlightAware AeroAPI</a
+        >
+        · Updated every hour ·
+        <a
+          href="https://github.com/RumianTom/airport-status"
+          target="_blank"
+          rel="noopener"
+          >Source</a
+        >
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

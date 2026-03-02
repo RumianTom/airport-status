@@ -1,0 +1,174 @@
+{
+  "lastUpdated": "2026-03-02T13:00:00Z",
+  "airports": [
+    {
+      "icao": "LLBG", "name": "Ben Gurion International", "city": "Tel Aviv", "country": "Israel",
+      "lat": 32.0114, "lon": 34.8867,
+      "status": "closed",
+      "delays": [{ "type": "closure", "reason": "Security — airspace closed", "avgMinutes": null }]
+    },
+    {
+      "icao": "LLER", "name": "Ramon International", "city": "Eilat", "country": "Israel",
+      "lat": 29.7237, "lon": 35.0124,
+      "status": "closed",
+      "delays": [{ "type": "closure", "reason": "Security", "avgMinutes": null }]
+    },
+    {
+      "icao": "OLBA", "name": "Rafic Hariri International", "city": "Beirut", "country": "Lebanon",
+      "lat": 33.8209, "lon": 35.4884,
+      "status": "closed",
+      "delays": [{ "type": "closure", "reason": "Conflict zone — airspace restrictions", "avgMinutes": null }]
+    },
+    {
+      "icao": "OSDI", "name": "Damascus International", "city": "Damascus", "country": "Syria",
+      "lat": 33.4115, "lon": 36.5156,
+      "status": "closed",
+      "delays": [{ "type": "closure", "reason": "Runway damage — airstrikes", "avgMinutes": null }]
+    },
+    {
+      "icao": "OSAP", "name": "Aleppo International", "city": "Aleppo", "country": "Syria",
+      "lat": 36.1807, "lon": 37.2244,
+      "status": "closed",
+      "delays": [{ "type": "closure", "reason": "Conflict zone", "avgMinutes": null }]
+    },
+    {
+      "icao": "OJAM", "name": "Queen Alia International", "city": "Amman", "country": "Jordan",
+      "lat": 31.7226, "lon": 35.9932,
+      "status": "delayed",
+      "delays": [{ "type": "ground_delay", "reason": "Regional airspace restrictions", "avgMinutes": 45 }]
+    },
+    {
+      "icao": "ORBI", "name": "Baghdad International", "city": "Baghdad", "country": "Iraq",
+      "lat": 33.2625, "lon": 44.2346,
+      "status": "closed",
+      "delays": [{ "type": "closure", "reason": "Airspace closed", "avgMinutes": null }]
+    },
+    {
+      "icao": "ORER", "name": "Erbil International", "city": "Erbil", "country": "Iraq",
+      "lat": 36.2376, "lon": 43.9632,
+      "status": "delayed",
+      "delays": [{ "type": "ground_delay", "reason": "Limited operations", "avgMinutes": 30 }]
+    },
+    {
+      "icao": "ORMM", "name": "Basra International", "city": "Basra", "country": "Iraq",
+      "lat": 30.5491, "lon": 47.6621,
+      "status": "closed",
+      "delays": [{ "type": "closure", "reason": "Airspace closed", "avgMinutes": null }]
+    },
+    {
+      "icao": "OIIE", "name": "Imam Khomeini International", "city": "Tehran", "country": "Iran",
+      "lat": 35.4161, "lon": 51.1522,
+      "status": "closed",
+      "delays": [{ "type": "closure", "reason": "Airspace closed — EASA CZIB", "avgMinutes": null }]
+    },
+    {
+      "icao": "OISS", "name": "Shiraz International", "city": "Shiraz", "country": "Iran",
+      "lat": 29.5392, "lon": 52.5899,
+      "status": "closed",
+      "delays": [{ "type": "closure", "reason": "Airspace closed", "avgMinutes": null }]
+    },
+    {
+      "icao": "OIBB", "name": "Bandar Abbas International", "city": "Bandar Abbas", "country": "Iran",
+      "lat": 27.2183, "lon": 56.3778,
+      "status": "closed",
+      "delays": [{ "type": "closure", "reason": "Airspace closed", "avgMinutes": null }]
+    },
+    {
+      "icao": "OMDB", "name": "Dubai International", "city": "Dubai", "country": "UAE",
+      "lat": 25.2528, "lon": 55.3644,
+      "status": "delayed",
+      "delays": [{ "type": "ground_delay", "reason": "Diversions from regional closures", "avgMinutes": 60 }]
+    },
+    {
+      "icao": "OMAA", "name": "Abu Dhabi International", "city": "Abu Dhabi", "country": "UAE",
+      "lat": 24.4440, "lon": 54.6511,
+      "status": "delayed",
+      "delays": [{ "type": "ground_delay", "reason": "Regional airspace congestion", "avgMinutes": 35 }]
+    },
+    {
+      "icao": "OMSJ", "name": "Sharjah International", "city": "Sharjah", "country": "UAE",
+      "lat": 25.3286, "lon": 55.5172,
+      "status": "operational",
+      "delays": []
+    },
+    {
+      "icao": "OTHH", "name": "Hamad International", "city": "Doha", "country": "Qatar",
+      "lat": 25.2731, "lon": 51.6081,
+      "status": "delayed",
+      "delays": [{ "type": "ground_delay", "reason": "Regional airspace restrictions", "avgMinutes": 25 }]
+    },
+    {
+      "icao": "OBBI", "name": "Bahrain International", "city": "Manama", "country": "Bahrain",
+      "lat": 26.2708, "lon": 50.6336,
+      "status": "delayed",
+      "delays": [{ "type": "ground_delay", "reason": "Airspace congestion", "avgMinutes": 20 }]
+    },
+    {
+      "icao": "OKBK", "name": "Kuwait International", "city": "Kuwait City", "country": "Kuwait",
+      "lat": 29.2267, "lon": 47.9689,
+      "status": "closed",
+      "delays": [{ "type": "closure", "reason": "Airspace closed", "avgMinutes": null }]
+    },
+    {
+      "icao": "OERK", "name": "King Khalid International", "city": "Riyadh", "country": "Saudi Arabia",
+      "lat": 24.9576, "lon": 46.6988,
+      "status": "operational",
+      "delays": []
+    },
+    {
+      "icao": "OEJN", "name": "King Abdulaziz International", "city": "Jeddah", "country": "Saudi Arabia",
+      "lat": 21.6796, "lon": 39.1565,
+      "status": "operational",
+      "delays": []
+    },
+    {
+      "icao": "OEDF", "name": "King Fahd International", "city": "Dammam", "country": "Saudi Arabia",
+      "lat": 26.4712, "lon": 49.7979,
+      "status": "operational",
+      "delays": []
+    },
+    {
+      "icao": "OOMS", "name": "Muscat International", "city": "Muscat", "country": "Oman",
+      "lat": 23.5933, "lon": 58.2844,
+      "status": "operational",
+      "delays": []
+    },
+    {
+      "icao": "OYSN", "name": "Sana'a International", "city": "Sana'a", "country": "Yemen",
+      "lat": 15.4763, "lon": 44.2197,
+      "status": "closed",
+      "delays": [{ "type": "closure", "reason": "Destroyed — airstrikes", "avgMinutes": null }]
+    },
+    {
+      "icao": "OYAA", "name": "Aden International", "city": "Aden", "country": "Yemen",
+      "lat": 12.8295, "lon": 45.0288,
+      "status": "closed",
+      "delays": [{ "type": "closure", "reason": "Limited operations — conflict zone", "avgMinutes": null }]
+    },
+    {
+      "icao": "HECA", "name": "Cairo International", "city": "Cairo", "country": "Egypt",
+      "lat": 30.1219, "lon": 31.4056,
+      "status": "operational",
+      "delays": []
+    },
+    {
+      "icao": "HEGN", "name": "Hurghada International", "city": "Hurghada", "country": "Egypt",
+      "lat": 27.1784, "lon": 33.7994,
+      "status": "operational",
+      "delays": []
+    },
+    {
+      "icao": "HESH", "name": "Sharm El Sheikh International", "city": "Sharm El Sheikh", "country": "Egypt",
+      "lat": 27.9773, "lon": 34.3950,
+      "status": "operational",
+      "delays": []
+    }
+  ],
+  "summary": {
+    "total": 27,
+    "closed": 12,
+    "delayed": 6,
+    "operational": 9,
+    "unknown": 0
+  }
+}
