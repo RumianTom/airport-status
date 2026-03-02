@@ -21,10 +21,20 @@
   --closed-text: #fca5a5;
   --closed-accent: #ef4444;
 
-  --delayed-bg: rgba(245, 158, 11, 0.12);
-  --delayed-border: rgba(245, 158, 11, 0.3);
-  --delayed-text: #fcd34d;
-  --delayed-accent: #f59e0b;
+  --atrisk-bg: rgba(245, 158, 11, 0.12);
+  --atrisk-border: rgba(245, 158, 11, 0.3);
+  --atrisk-text: #fcd34d;
+  --atrisk-accent: #f59e0b;
+
+  --caution-bg: rgba(234, 179, 8, 0.12);
+  --caution-border: rgba(234, 179, 8, 0.3);
+  --caution-text: #fef08a;
+  --caution-accent: #eab308;
+
+  --delayed-bg: rgba(251, 146, 60, 0.12);
+  --delayed-border: rgba(251, 146, 60, 0.3);
+  --delayed-text: #fdba74;
+  --delayed-accent: #fb923c;
 
   --operational-bg: rgba(34, 197, 94, 0.12);
   --operational-border: rgba(34, 197, 94, 0.3);
@@ -149,7 +159,7 @@ h1 {
   margin: 24px auto 0;
   padding: 0 24px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: var(--gap);
 }
 
@@ -193,6 +203,28 @@ h1 {
 }
 .stat-closed .stat-label {
   color: var(--closed-text);
+}
+
+.stat-at-risk {
+  background: var(--atrisk-bg);
+  border-color: var(--atrisk-border);
+}
+.stat-at-risk .stat-number {
+  color: var(--atrisk-accent);
+}
+.stat-at-risk .stat-label {
+  color: var(--atrisk-text);
+}
+
+.stat-caution {
+  background: var(--caution-bg);
+  border-color: var(--caution-border);
+}
+.stat-caution .stat-number {
+  color: var(--caution-accent);
+}
+.stat-caution .stat-label {
+  color: var(--caution-text);
 }
 
 .stat-delayed {
@@ -370,6 +402,18 @@ h1 {
   }
 }
 
+.status-at-risk {
+  background: var(--atrisk-bg);
+  color: var(--atrisk-text);
+  border: 1px solid var(--atrisk-border);
+}
+
+.status-caution {
+  background: var(--caution-bg);
+  color: var(--caution-text);
+  border: 1px solid var(--caution-border);
+}
+
 .status-delayed {
   background: var(--delayed-bg);
   color: var(--delayed-text);
@@ -419,6 +463,14 @@ h1 {
 .airport-card.card-closed {
   border-color: var(--closed-border);
   box-shadow: inset 0 0 0 1px rgba(239, 68, 68, 0.05);
+}
+
+.airport-card.card-at-risk {
+  border-color: var(--atrisk-border);
+}
+
+.airport-card.card-caution {
+  border-color: var(--caution-border);
 }
 
 .airport-card.card-delayed {
@@ -507,7 +559,7 @@ footer {
 /* ---- Responsive ---- */
 @media (max-width: 768px) {
   .summary {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .airport-grid {

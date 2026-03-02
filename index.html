@@ -37,11 +37,15 @@
     <section id="summary" class="summary">
       <div class="stat-card stat-closed" id="stat-closed">
         <span class="stat-number">—</span>
-        <span class="stat-label">Closed</span>
+        <span class="stat-label">Do Not Fly</span>
       </div>
-      <div class="stat-card stat-delayed" id="stat-delayed">
+      <div class="stat-card stat-at-risk" id="stat-at-risk">
         <span class="stat-number">—</span>
-        <span class="stat-label">Delayed</span>
+        <span class="stat-label">At Risk</span>
+      </div>
+      <div class="stat-card stat-caution" id="stat-caution">
+        <span class="stat-number">—</span>
+        <span class="stat-label">Caution</span>
       </div>
       <div class="stat-card stat-operational" id="stat-operational">
         <span class="stat-number">—</span>
@@ -55,22 +59,11 @@
 
     <!-- Filters -->
     <section class="filters">
-      <button class="filter-btn active" data-filter="all" id="filter-all">
-        All
-      </button>
-      <button class="filter-btn" data-filter="closed" id="filter-closed">
-        🔴 Closed
-      </button>
-      <button class="filter-btn" data-filter="delayed" id="filter-delayed">
-        🟠 Delayed
-      </button>
-      <button
-        class="filter-btn"
-        data-filter="operational"
-        id="filter-operational"
-      >
-        🟢 Operational
-      </button>
+      <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+      <button class="filter-btn" data-filter="closed" id="filter-closed">🔴 Do Not Fly</button>
+      <button class="filter-btn" data-filter="at-risk" id="filter-at-risk">🟠 At Risk</button>
+      <button class="filter-btn" data-filter="caution" id="filter-caution">🟡 Caution</button>
+      <button class="filter-btn" data-filter="operational" id="filter-operational">🟢 Operational</button>
     </section>
 
     <!-- Airport Grid -->
@@ -90,9 +83,8 @@
     <footer>
       <p>
         Data from
-        <a href="https://flightaware.com" target="_blank" rel="noopener"
-          >FlightAware AeroAPI</a
-        >
+        <a href="https://safeairspace.net" target="_blank" rel="noopener">SafeAirspace</a> &amp;
+        <a href="https://flightaware.com" target="_blank" rel="noopener">FlightAware</a>
         · Updated every hour ·
         <a
           href="https://github.com/RumianTom/airport-status"
