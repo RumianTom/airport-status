@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-03T15:17:26.461Z",
+  "lastUpdated": "2026-03-03T16:15:58.185Z",
   "airports": [
     {
       "icao": "LLBG",
@@ -45,11 +45,11 @@
       "riskLevel": 1,
       "riskText": "One - Do Not Fly",
       "warnings": [
+        "Notam LFFF F0381/26",
         "Notam EDWW B0112/26",
         "Notam LIRR E2882/25",
         "Notam  EGTT V0042/25",
-        "Notam OLBB A0276/25",
-        "CZIB 2024-01 R7"
+        "Notam OLBB A0276/25"
       ]
     },
     {
@@ -101,7 +101,9 @@
       "statusLabel": "Exercise Caution",
       "riskLevel": 3,
       "riskText": "Three - Caution",
-      "warnings": []
+      "warnings": [
+        "Notam LFFF F0383/26"
+      ]
     },
     {
       "icao": "ORBI",
@@ -115,11 +117,11 @@
       "riskLevel": 2,
       "riskText": "Two - Danger exists",
       "warnings": [
+        "Notam LFFF F0380/26",
         "Notam LIRR E2880/25",
         "AIC 002/26",
         "CZIB 2017-04R19",
-        "Notam ORBB A0664/25",
-        "SFAR 77"
+        "Notam ORBB A0664/25"
       ]
     },
     {
@@ -134,11 +136,11 @@
       "riskLevel": 2,
       "riskText": "Two - Danger exists",
       "warnings": [
+        "Notam LFFF F0380/26",
         "Notam LIRR E2880/25",
         "AIC 002/26",
         "CZIB 2017-04R19",
-        "Notam ORBB A0664/25",
-        "SFAR 77"
+        "Notam ORBB A0664/25"
       ]
     },
     {
@@ -153,11 +155,11 @@
       "riskLevel": 2,
       "riskText": "Two - Danger exists",
       "warnings": [
+        "Notam LFFF F0380/26",
         "Notam LIRR E2880/25",
         "AIC 002/26",
         "CZIB 2017-04R19",
-        "Notam ORBB A0664/25",
-        "SFAR 77"
+        "Notam ORBB A0664/25"
       ]
     },
     {
@@ -172,11 +174,11 @@
       "riskLevel": 1,
       "riskText": "One - Do Not Fly",
       "warnings": [
+        "Notam LFFF F0379/2",
         "CZIB 2026-03-R1",
         "Notam EDWW B0082/26",
         "CZIB 2026-02 R1",
-        "Notam LIRR E2877/25",
-        "AIC 08/25"
+        "Notam LIRR E2877/25"
       ]
     },
     {
@@ -191,11 +193,11 @@
       "riskLevel": 1,
       "riskText": "One - Do Not Fly",
       "warnings": [
+        "Notam LFFF F0379/2",
         "CZIB 2026-03-R1",
         "Notam EDWW B0082/26",
         "CZIB 2026-02 R1",
-        "Notam LIRR E2877/25",
-        "AIC 08/25"
+        "Notam LIRR E2877/25"
       ]
     },
     {
@@ -210,11 +212,11 @@
       "riskLevel": 1,
       "riskText": "One - Do Not Fly",
       "warnings": [
+        "Notam LFFF F0379/2",
         "CZIB 2026-03-R1",
         "Notam EDWW B0082/26",
         "CZIB 2026-02 R1",
-        "Notam LIRR E2877/25",
-        "AIC 08/25"
+        "Notam LIRR E2877/25"
       ]
     },
     {
@@ -229,6 +231,7 @@
       "riskLevel": 0,
       "riskText": "No Warnings",
       "warnings": [
+        "Notam LFFF F0387/26",
         "Notam OMAE A0404/21"
       ]
     },
@@ -244,6 +247,7 @@
       "riskLevel": 0,
       "riskText": "No Warnings",
       "warnings": [
+        "Notam LFFF F0387/26",
         "Notam OMAE A0404/21"
       ]
     },
@@ -259,6 +263,7 @@
       "riskLevel": 0,
       "riskText": "No Warnings",
       "warnings": [
+        "Notam LFFF F0387/26",
         "Notam OMAE A0404/21"
       ]
     },
@@ -273,7 +278,9 @@
       "statusLabel": "Operational",
       "riskLevel": 0,
       "riskText": "No Warnings",
-      "warnings": []
+      "warnings": [
+        "Notam LFFF F0386/26"
+      ]
     },
     {
       "icao": "OBBI",
@@ -286,7 +293,9 @@
       "statusLabel": "Exercise Caution",
       "riskLevel": 3,
       "riskText": "Three - Caution",
-      "warnings": []
+      "warnings": [
+        "Notam LFFF F0382/26"
+      ]
     },
     {
       "icao": "OKBK",
@@ -299,7 +308,9 @@
       "statusLabel": "Operational",
       "riskLevel": 0,
       "riskText": "No Warnings",
-      "warnings": []
+      "warnings": [
+        "Notam LFFF F0384/26"
+      ]
     },
     {
       "icao": "OERK",
@@ -308,11 +319,12 @@
       "country": "Saudi Arabia",
       "lat": 24.9576,
       "lon": 46.6988,
-      "status": "at-risk",
-      "statusLabel": "Danger Exists",
-      "riskLevel": 2,
-      "riskText": "Two - Danger exists",
+      "status": "caution",
+      "statusLabel": "Exercise Caution",
+      "riskLevel": 3,
+      "riskText": "Three - Caution",
       "warnings": [
+        "Notam LFFF F0388/26",
         "Notam LIRR E2890/25",
         "AIC 002/26",
         "AIC 21/25",
@@ -326,11 +338,12 @@
       "country": "Saudi Arabia",
       "lat": 21.6796,
       "lon": 39.1565,
-      "status": "at-risk",
-      "statusLabel": "Danger Exists",
-      "riskLevel": 2,
-      "riskText": "Two - Danger exists",
+      "status": "caution",
+      "statusLabel": "Exercise Caution",
+      "riskLevel": 3,
+      "riskText": "Three - Caution",
       "warnings": [
+        "Notam LFFF F0388/26",
         "Notam LIRR E2890/25",
         "AIC 002/26",
         "AIC 21/25",
@@ -344,11 +357,12 @@
       "country": "Saudi Arabia",
       "lat": 26.4712,
       "lon": 49.7979,
-      "status": "at-risk",
-      "statusLabel": "Danger Exists",
-      "riskLevel": 2,
-      "riskText": "Two - Danger exists",
+      "status": "caution",
+      "statusLabel": "Exercise Caution",
+      "riskLevel": 3,
+      "riskText": "Three - Caution",
       "warnings": [
+        "Notam LFFF F0388/26",
         "Notam LIRR E2890/25",
         "AIC 002/26",
         "AIC 21/25",
@@ -366,7 +380,9 @@
       "statusLabel": "Operational",
       "riskLevel": 0,
       "riskText": "No Warnings",
-      "warnings": []
+      "warnings": [
+        "Notam LFFF F0385/26"
+      ]
     },
     {
       "icao": "OYSN",
@@ -687,8 +703,8 @@
   "summary": {
     "total": 40,
     "closed": 13,
-    "atRisk": 11,
-    "caution": 10,
+    "atRisk": 8,
+    "caution": 13,
     "operational": 6
   }
 }
