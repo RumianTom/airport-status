@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-03T16:15:58.185Z",
+  "lastUpdated": "2026-03-03T17:16:43.845Z",
   "airports": [
     {
       "icao": "LLBG",
@@ -376,10 +376,10 @@
       "country": "Oman",
       "lat": 23.5933,
       "lon": 58.2844,
-      "status": "operational",
-      "statusLabel": "Operational",
-      "riskLevel": 0,
-      "riskText": "No Warnings",
+      "status": "caution",
+      "statusLabel": "Exercise Caution",
+      "riskLevel": 3,
+      "riskText": "Three - Caution",
       "warnings": [
         "Notam LFFF F0385/26"
       ]
@@ -704,7 +704,7 @@
     "total": 40,
     "closed": 13,
     "atRisk": 8,
-    "caution": 13,
-    "operational": 6
+    "caution": 14,
+    "operational": 5
   }
 }
