@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-04T12:09:05.668Z",
+  "lastUpdated": "2026-03-04T13:24:57.108Z",
   "airports": [
     {
       "icao": "LLBG",
@@ -226,13 +226,12 @@
       "country": "UAE",
       "lat": 25.2528,
       "lon": 55.3644,
-      "status": "operational",
-      "statusLabel": "Operational",
-      "riskLevel": 0,
-      "riskText": "No Warnings",
+      "status": "caution",
+      "statusLabel": "Exercise Caution",
+      "riskLevel": 3,
+      "riskText": "Three - Caution",
       "warnings": [
-        "Notam LFFF F0387/26",
-        "Notam OMAE A0404/21"
+        "Notam LFFF F0387/26"
       ]
     },
     {
@@ -242,13 +241,12 @@
       "country": "UAE",
       "lat": 24.444,
       "lon": 54.6511,
-      "status": "operational",
-      "statusLabel": "Operational",
-      "riskLevel": 0,
-      "riskText": "No Warnings",
+      "status": "caution",
+      "statusLabel": "Exercise Caution",
+      "riskLevel": 3,
+      "riskText": "Three - Caution",
       "warnings": [
-        "Notam LFFF F0387/26",
-        "Notam OMAE A0404/21"
+        "Notam LFFF F0387/26"
       ]
     },
     {
@@ -258,13 +256,12 @@
       "country": "UAE",
       "lat": 25.3286,
       "lon": 55.5172,
-      "status": "operational",
-      "statusLabel": "Operational",
-      "riskLevel": 0,
-      "riskText": "No Warnings",
+      "status": "caution",
+      "statusLabel": "Exercise Caution",
+      "riskLevel": 3,
+      "riskText": "Three - Caution",
       "warnings": [
-        "Notam LFFF F0387/26",
-        "Notam OMAE A0404/21"
+        "Notam LFFF F0387/26"
       ]
     },
     {
@@ -274,10 +271,10 @@
       "country": "Qatar",
       "lat": 25.2731,
       "lon": 51.6081,
-      "status": "operational",
-      "statusLabel": "Operational",
-      "riskLevel": 0,
-      "riskText": "No Warnings",
+      "status": "caution",
+      "statusLabel": "Exercise Caution",
+      "riskLevel": 3,
+      "riskText": "Three - Caution",
       "warnings": [
         "Notam LFFF F0386/26"
       ]
@@ -304,10 +301,10 @@
       "country": "Kuwait",
       "lat": 29.2267,
       "lon": 47.9689,
-      "status": "operational",
-      "statusLabel": "Operational",
-      "riskLevel": 0,
-      "riskText": "No Warnings",
+      "status": "caution",
+      "statusLabel": "Exercise Caution",
+      "riskLevel": 3,
+      "riskText": "Three - Caution",
       "warnings": [
         "Notam LFFF F0384/26"
       ]
@@ -704,7 +701,7 @@
     "total": 40,
     "closed": 13,
     "atRisk": 8,
-    "caution": 14,
-    "operational": 5
+    "caution": 19,
+    "operational": 0
   }
 }
