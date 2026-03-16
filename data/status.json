@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-16T01:34:50.373Z",
+  "lastUpdated": "2026-03-16T03:03:52.014Z",
   "airports": [
     {
       "icao": "LLBG",
@@ -321,7 +321,7 @@
       "riskLevel": 3,
       "riskText": "Three - Caution",
       "warnings": [
-        "Notam LFFF F0433/26",
+        "Notam LFFF F0451/26",
         "Notam LIRR E2890/25",
         "AIC 002/26",
         "AIC 21/25",
@@ -340,7 +340,7 @@
       "riskLevel": 3,
       "riskText": "Three - Caution",
       "warnings": [
-        "Notam LFFF F0433/26",
+        "Notam LFFF F0451/26",
         "Notam LIRR E2890/25",
         "AIC 002/26",
         "AIC 21/25",
@@ -359,7 +359,7 @@
       "riskLevel": 3,
       "riskText": "Three - Caution",
       "warnings": [
-        "Notam LFFF F0433/26",
+        "Notam LFFF F0451/26",
         "Notam LIRR E2890/25",
         "AIC 002/26",
         "AIC 21/25",
