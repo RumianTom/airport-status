@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-19T13:30:19.371Z",
+  "lastUpdated": "2026-03-19T14:18:49.147Z",
   "airports": [
     {
       "icao": "LLBG",
@@ -13,6 +13,7 @@
       "riskLevel": 1,
       "riskText": "One - Do Not Fly",
       "warnings": [
+        "CZIB 2026-03-R4",
         "Notam LIRR E2886/25",
         "AIC 21/25"
       ]
@@ -29,6 +30,7 @@
       "riskLevel": 1,
       "riskText": "One - Do Not Fly",
       "warnings": [
+        "CZIB 2026-03-R4",
         "Notam LIRR E2886/25",
         "AIC 21/25"
       ]
@@ -45,11 +47,11 @@
       "riskLevel": 1,
       "riskText": "One - Do Not Fly",
       "warnings": [
-        "Notam LFFF F0437/26",
+        "Notam LFFF F0483/26",
         "Notam EDWW B0112/26",
+        "CZIB 2026-03-R4",
         "Notam LIRR E2882/25",
-        "Notam  EGTT V0042/25",
-        "Notam OLBB A0276/25"
+        "Notam  EGTT V0042/25"
       ]
     },
     {
@@ -102,7 +104,8 @@
       "riskLevel": 3,
       "riskText": "Three - Caution",
       "warnings": [
-        "Notam LFFF F0487/26"
+        "Notam LFFF F0487/26",
+        "CZIB 2026-03-R4"
       ]
     },
     {
@@ -117,10 +120,10 @@
       "riskLevel": 2,
       "riskText": "Two - Danger exists",
       "warnings": [
-        "Notam LFFF F0435/26",
+        "Notam LFFF F0481/26",
+        "CZIB 2026-03-R4",
         "Notam LIRR E2880/25",
         "AIC 002/26",
-        "CZIB 2017-04R19",
         "Notam ORBB A0664/25"
       ]
     },
@@ -136,10 +139,10 @@
       "riskLevel": 2,
       "riskText": "Two - Danger exists",
       "warnings": [
-        "Notam LFFF F0435/26",
+        "Notam LFFF F0481/26",
+        "CZIB 2026-03-R4",
         "Notam LIRR E2880/25",
         "AIC 002/26",
-        "CZIB 2017-04R19",
         "Notam ORBB A0664/25"
       ]
     },
@@ -155,10 +158,10 @@
       "riskLevel": 2,
       "riskText": "Two - Danger exists",
       "warnings": [
-        "Notam LFFF F0435/26",
+        "Notam LFFF F0481/26",
+        "CZIB 2026-03-R4",
         "Notam LIRR E2880/25",
         "AIC 002/26",
-        "CZIB 2017-04R19",
         "Notam ORBB A0664/25"
       ]
     },
@@ -174,11 +177,11 @@
       "riskLevel": 1,
       "riskText": "One - Do Not Fly",
       "warnings": [
-        "Notam LFFF F0434/26",
-        "CZIB 2026-03-R1",
-        "Notam EDWW B0082/26",
-        "CZIB 2026-02 R1",
-        "Notam LIRR E2877/25"
+        "Notam LFFF F0480/26",
+        "Notam EDWW B0132/26",
+        "CZIB 2026-03-R4",
+        "Notam LIRR E2877/25",
+        "AIC 08/25"
       ]
     },
     {
@@ -193,11 +196,11 @@
       "riskLevel": 1,
       "riskText": "One - Do Not Fly",
       "warnings": [
-        "Notam LFFF F0434/26",
-        "CZIB 2026-03-R1",
-        "Notam EDWW B0082/26",
-        "CZIB 2026-02 R1",
-        "Notam LIRR E2877/25"
+        "Notam LFFF F0480/26",
+        "Notam EDWW B0132/26",
+        "CZIB 2026-03-R4",
+        "Notam LIRR E2877/25",
+        "AIC 08/25"
       ]
     },
     {
@@ -212,11 +215,11 @@
       "riskLevel": 1,
       "riskText": "One - Do Not Fly",
       "warnings": [
-        "Notam LFFF F0434/26",
-        "CZIB 2026-03-R1",
-        "Notam EDWW B0082/26",
-        "CZIB 2026-02 R1",
-        "Notam LIRR E2877/25"
+        "Notam LFFF F0480/26",
+        "Notam EDWW B0132/26",
+        "CZIB 2026-03-R4",
+        "Notam LIRR E2877/25",
+        "AIC 08/25"
       ]
     },
     {
@@ -231,7 +234,8 @@
       "riskLevel": 3,
       "riskText": "Three - Caution",
       "warnings": [
-        "Notam LFFF F0436/26"
+        "Notam LFFF F0482/26",
+        "CZIB 2026-03-R4"
       ]
     },
     {
@@ -246,7 +250,8 @@
       "riskLevel": 3,
       "riskText": "Three - Caution",
       "warnings": [
-        "Notam LFFF F0436/26"
+        "Notam LFFF F0482/26",
+        "CZIB 2026-03-R4"
       ]
     },
     {
@@ -261,7 +266,8 @@
       "riskLevel": 3,
       "riskText": "Three - Caution",
       "warnings": [
-        "Notam LFFF F0436/26"
+        "Notam LFFF F0482/26",
+        "CZIB 2026-03-R4"
       ]
     },
     {
@@ -276,7 +282,8 @@
       "riskLevel": 3,
       "riskText": "Three - Caution",
       "warnings": [
-        "Notam LFFF F0484/26"
+        "Notam LFFF F0484/26",
+        "CZIB 2026-03-R4"
       ]
     },
     {
@@ -306,7 +313,8 @@
       "riskLevel": 3,
       "riskText": "Three - Caution",
       "warnings": [
-        "Notam LFFF F0485/26"
+        "Notam LFFF F0485/26",
+        "CZIB 2026-03-R4"
       ]
     },
     {
@@ -322,10 +330,10 @@
       "riskText": "Three - Caution",
       "warnings": [
         "Notam LFFF F0488/26",
+        "CZIB 2026-03-R4",
         "Notam LIRR E2890/25",
         "AIC 002/26",
-        "AIC 21/25",
-        "Notam OEJD W0120/21"
+        "AIC 21/25"
       ]
     },
     {
@@ -341,10 +349,10 @@
       "riskText": "Three - Caution",
       "warnings": [
         "Notam LFFF F0488/26",
+        "CZIB 2026-03-R4",
         "Notam LIRR E2890/25",
         "AIC 002/26",
-        "AIC 21/25",
-        "Notam OEJD W0120/21"
+        "AIC 21/25"
       ]
     },
     {
@@ -360,10 +368,10 @@
       "riskText": "Three - Caution",
       "warnings": [
         "Notam LFFF F0488/26",
+        "CZIB 2026-03-R4",
         "Notam LIRR E2890/25",
         "AIC 002/26",
-        "AIC 21/25",
-        "Notam OEJD W0120/21"
+        "AIC 21/25"
       ]
     },
     {
@@ -378,7 +386,8 @@
       "riskLevel": 3,
       "riskText": "Three - Caution",
       "warnings": [
-        "Notam LFFF F0489/26"
+        "Notam LFFF F0489/26",
+        "CZIB 2026-03-R4"
       ]
     },
     {
