@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-17T10:25:55.766Z",
+  "lastUpdated": "2026-04-17T11:19:28.655Z",
   "airports": [
     {
       "icao": "LLBG",
@@ -622,9 +622,9 @@
       "riskLevel": 2,
       "riskText": "Two - Danger exists",
       "warnings": [
+        "Notam LIRR E0561/26",
         "Notam EGTT V0011/26",
         "Notam EGTT V0004/26",
-        "Notam LIRR E2879/25",
         "SFAR 119",
         "AIC 08/25"
       ]
@@ -679,7 +679,7 @@
       "riskLevel": 1,
       "riskText": "One - Do Not Fly",
       "warnings": [
-        "Notam LIRR E2889/25",
+        "Notam LIRR E0570/26",
         "AIC 002/26",
         "AIC 21/25",
         "CZIB 2023-01 R7",
