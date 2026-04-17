@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-17T11:19:28.655Z",
+  "lastUpdated": "2026-04-17T12:18:48.194Z",
   "airports": [
     {
       "icao": "LLBG",
@@ -121,8 +121,8 @@
       "riskText": "Two - Danger exists",
       "warnings": [
         "Notam LFFF F0662/26",
+        "Notam LIRR E0564/26",
         "CZIB 2026-03-R5",
-        "Notam LIRR E2880/25",
         "AIC 002/26",
         "Notam ORBB A0664/25"
       ]
@@ -140,8 +140,8 @@
       "riskText": "Two - Danger exists",
       "warnings": [
         "Notam LFFF F0662/26",
+        "Notam LIRR E0564/26",
         "CZIB 2026-03-R5",
-        "Notam LIRR E2880/25",
         "AIC 002/26",
         "Notam ORBB A0664/25"
       ]
@@ -159,8 +159,8 @@
       "riskText": "Two - Danger exists",
       "warnings": [
         "Notam LFFF F0662/26",
+        "Notam LIRR E0564/26",
         "CZIB 2026-03-R5",
-        "Notam LIRR E2880/25",
         "AIC 002/26",
         "Notam ORBB A0664/25"
       ]
