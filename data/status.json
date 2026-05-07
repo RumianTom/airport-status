@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-07T11:34:29.383Z",
+  "lastUpdated": "2026-05-07T12:36:24.699Z",
   "airports": [
     {
       "icao": "LLBG",
@@ -485,9 +485,9 @@
       "riskLevel": 3,
       "riskText": "Three - Caution",
       "warnings": [
-        "Notam LCCC A1364/25",
+        "Notam LCCC A0554/26",
+        "Notam LCCC A0530/26",
         "Notam LIRR E1537/25",
-        "Notam LCCC A1315/25",
         "Notam KICZ A0009/18",
         "Notam LCEN N0068/18"
       ]
@@ -504,9 +504,9 @@
       "riskLevel": 3,
       "riskText": "Three - Caution",
       "warnings": [
-        "Notam LCCC A1364/25",
+        "Notam LCCC A0554/26",
+        "Notam LCCC A0530/26",
         "Notam LIRR E1537/25",
-        "Notam LCCC A1315/25",
         "Notam KICZ A0009/18",
         "Notam LCEN N0068/18"
       ]
