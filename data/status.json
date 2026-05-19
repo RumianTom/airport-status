@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-19T11:03:52.289Z",
+  "lastUpdated": "2026-05-19T13:02:53.013Z",
   "airports": [
     {
       "icao": "LLBG",
@@ -47,11 +47,11 @@
       "riskLevel": 1,
       "riskText": "One - Do Not Fly",
       "warnings": [
+        "Notam OLBB A0103/26",
         "Notam LFFF F0994/26",
         "Notam  EGTT V0015/26",
         "Notam EDWW B0190/26",
-        "Notam LIRR E0563/26",
-        "CZIB 2026-03-R10"
+        "Notam LIRR E0563/26"
       ]
     },
     {
