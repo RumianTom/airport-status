@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-03T11:36:52.439Z",
+  "lastUpdated": "2026-06-03T13:34:37.777Z",
   "airports": [
     {
       "icao": "LLBG",
@@ -47,10 +47,10 @@
       "riskLevel": 1,
       "riskText": "One - Do Not Fly",
       "warnings": [
+        "Notam EDWW B0436/26",
         "Notam LFFF F1106/26",
         "Notam OLBB A0103/26",
         "Notam  EGTT V0015/26",
-        "Notam EDWW B0190/26",
         "Notam LIRR E0563/26"
       ]
     },
@@ -177,8 +177,8 @@
       "riskLevel": 1,
       "riskText": "One - Do Not Fly",
       "warnings": [
+        "Notam EDWW B0437/26",
         "Notam LFFF F1104/26",
-        "Notam EDWW B0189/26",
         "Notam LIRR E0559/26",
         "CZIB 2026-03-R11",
         "AIC 08/25"
@@ -196,8 +196,8 @@
       "riskLevel": 1,
       "riskText": "One - Do Not Fly",
       "warnings": [
+        "Notam EDWW B0437/26",
         "Notam LFFF F1104/26",
-        "Notam EDWW B0189/26",
         "Notam LIRR E0559/26",
         "CZIB 2026-03-R11",
         "AIC 08/25"
@@ -215,8 +215,8 @@
       "riskLevel": 1,
       "riskText": "One - Do Not Fly",
       "warnings": [
+        "Notam EDWW B0437/26",
         "Notam LFFF F1104/26",
-        "Notam EDWW B0189/26",
         "Notam LIRR E0559/26",
         "CZIB 2026-03-R11",
         "AIC 08/25"
