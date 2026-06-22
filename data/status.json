@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-22T12:58:02.312Z",
+  "lastUpdated": "2026-06-22T14:59:09.135Z",
   "airports": [
     {
       "icao": "LLBG",
@@ -8,10 +8,10 @@
       "country": "Israel",
       "lat": 32.0114,
       "lon": 34.8867,
-      "status": "closed",
-      "statusLabel": "Do Not Fly",
-      "riskLevel": 1,
-      "riskText": "One - Do Not Fly",
+      "status": "at-risk",
+      "statusLabel": "Danger Exists",
+      "riskLevel": 2,
+      "riskText": "Two - Danger exists",
       "warnings": [
         "Notam LIRR E1448/26",
         "CZIB 2026-03-R12",
@@ -25,10 +25,10 @@
       "country": "Israel",
       "lat": 29.7237,
       "lon": 35.0124,
-      "status": "closed",
-      "statusLabel": "Do Not Fly",
-      "riskLevel": 1,
-      "riskText": "One - Do Not Fly",
+      "status": "at-risk",
+      "statusLabel": "Danger Exists",
+      "riskLevel": 2,
+      "riskText": "Two - Danger exists",
       "warnings": [
         "Notam LIRR E1448/26",
         "CZIB 2026-03-R12",
@@ -707,8 +707,8 @@
   ],
   "summary": {
     "total": 40,
-    "closed": 13,
-    "atRisk": 8,
+    "closed": 11,
+    "atRisk": 10,
     "caution": 19,
     "operational": 0
   }
