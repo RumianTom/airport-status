@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T09:07:02.687Z",
+  "lastUpdated": "2026-07-01T11:08:30.445Z",
   "airports": [
     {
       "icao": "LLBG",
@@ -8,15 +8,11 @@
       "country": "Israel",
       "lat": 32.0114,
       "lon": 34.8867,
-      "status": "at-risk",
-      "statusLabel": "Danger Exists",
-      "riskLevel": 2,
-      "riskText": "Two - Danger exists",
-      "warnings": [
-        "Notam LIRR E1448/26",
-        "CZIB 2026-03-R13",
-        "AIC 17/26"
-      ]
+      "status": "operational",
+      "statusLabel": "Operational",
+      "riskLevel": null,
+      "riskText": null,
+      "warnings": []
     },
     {
       "icao": "LLER",
@@ -25,15 +21,11 @@
       "country": "Israel",
       "lat": 29.7237,
       "lon": 35.0124,
-      "status": "at-risk",
-      "statusLabel": "Danger Exists",
-      "riskLevel": 2,
-      "riskText": "Two - Danger exists",
-      "warnings": [
-        "Notam LIRR E1448/26",
-        "CZIB 2026-03-R13",
-        "AIC 17/26"
-      ]
+      "status": "operational",
+      "statusLabel": "Operational",
+      "riskLevel": null,
+      "riskText": null,
+      "warnings": []
     },
     {
       "icao": "OLBA",
@@ -42,17 +34,11 @@
       "country": "Lebanon",
       "lat": 33.8209,
       "lon": 35.4884,
-      "status": "closed",
-      "statusLabel": "Do Not Fly",
-      "riskLevel": 1,
-      "riskText": "One - Do Not Fly",
-      "warnings": [
-        "Notam LFFF F1385/26",
-        "Notam LIRR E1452/26",
-        "Notam EDWW B0436/26",
-        "Notam OLBB A0103/26",
-        "Notam  EGTT V0015/26"
-      ]
+      "status": "operational",
+      "statusLabel": "Operational",
+      "riskLevel": null,
+      "riskText": null,
+      "warnings": []
     },
     {
       "icao": "OSDI",
@@ -61,17 +47,11 @@
       "country": "Syria",
       "lat": 33.4115,
       "lon": 36.5156,
-      "status": "closed",
-      "statusLabel": "Do Not Fly",
-      "riskLevel": 1,
-      "riskText": "One - Do Not Fly",
-      "warnings": [
-        "Notam LIRR E1459/26",
-        "Notam EDWW B0294/26",
-        "AIC 17/26",
-        "SFAR 114",
-        "AIC 011/26"
-      ]
+      "status": "operational",
+      "statusLabel": "Operational",
+      "riskLevel": null,
+      "riskText": null,
+      "warnings": []
     },
     {
       "icao": "OSAP",
@@ -80,17 +60,11 @@
       "country": "Syria",
       "lat": 36.1807,
       "lon": 37.2244,
-      "status": "closed",
-      "statusLabel": "Do Not Fly",
-      "riskLevel": 1,
-      "riskText": "One - Do Not Fly",
-      "warnings": [
-        "Notam LIRR E1459/26",
-        "Notam EDWW B0294/26",
-        "AIC 17/26",
-        "SFAR 114",
-        "AIC 011/26"
-      ]
+      "status": "operational",
+      "statusLabel": "Operational",
+      "riskLevel": null,
+      "riskText": null,
+      "warnings": []
     },
     {
       "icao": "OJAM",
@@ -707,9 +681,9 @@
   ],
   "summary": {
     "total": 40,
-    "closed": 11,
-    "atRisk": 10,
+    "closed": 8,
+    "atRisk": 8,
     "caution": 19,
-    "operational": 0
+    "operational": 5
   }
 }
