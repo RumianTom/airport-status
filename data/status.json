@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-02T11:28:26.964Z",
+  "lastUpdated": "2026-07-02T13:43:47.412Z",
   "airports": [
     {
       "icao": "LLBG",
@@ -13,6 +13,7 @@
       "riskLevel": 2,
       "riskText": "Two - Danger exists",
       "warnings": [
+        "Notam UUUU U0761/26",
         "Notam LIRR E1448/26",
         "CZIB 2026-03-R14",
         "AIC 17/26"
@@ -30,6 +31,7 @@
       "riskLevel": 2,
       "riskText": "Two - Danger exists",
       "warnings": [
+        "Notam UUUU U0761/26",
         "Notam LIRR E1448/26",
         "CZIB 2026-03-R14",
         "AIC 17/26"
