@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-23T11:03:43.874Z",
+  "lastUpdated": "2026-07-23T13:40:02.328Z",
   "airports": [
     {
       "icao": "LLBG",
@@ -104,7 +104,8 @@
       "riskLevel": 3,
       "riskText": "Three - Caution",
       "warnings": [
-        "Notam LFFF F1578/26"
+        "Notam LFFF F1578/26",
+        "CZIB 2026-08"
       ]
     },
     {
@@ -233,7 +234,7 @@
       "riskLevel": 3,
       "riskText": "Three - Caution",
       "warnings": [
-        "CZIB 2026-07",
+        "CZIB 2026-07R1",
         "Notam LFFF F1456/26"
       ]
     },
@@ -249,7 +250,7 @@
       "riskLevel": 3,
       "riskText": "Three - Caution",
       "warnings": [
-        "CZIB 2026-07",
+        "CZIB 2026-07R1",
         "Notam LFFF F1456/26"
       ]
     },
@@ -265,7 +266,7 @@
       "riskLevel": 3,
       "riskText": "Three - Caution",
       "warnings": [
-        "CZIB 2026-07",
+        "CZIB 2026-07R1",
         "Notam LFFF F1456/26"
       ]
     },
@@ -282,7 +283,7 @@
       "riskText": "Three - Caution",
       "warnings": [
         "Notam LFFF F1581/26",
-        "CZIB 2026-07"
+        "CZIB 2026-07R1"
       ]
     },
     {
@@ -298,7 +299,7 @@
       "riskText": "Three - Caution",
       "warnings": [
         "Notam LFFF F1579/26",
-        "CZIB 2026-07"
+        "CZIB 2026-07R1"
       ]
     },
     {
@@ -314,7 +315,7 @@
       "riskText": "Three - Caution",
       "warnings": [
         "Notam LFFF F1580/26",
-        "CZIB 2026-07"
+        "CZIB 2026-07R1"
       ]
     },
     {
@@ -386,7 +387,7 @@
       "riskLevel": 3,
       "riskText": "Three - Caution",
       "warnings": [
-        "CZIB 2026-07",
+        "CZIB 2026-07R1",
         "Notam LFFF F1455/26"
       ]
     },
